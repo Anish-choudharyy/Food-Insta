@@ -5,17 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Campus Bites - Hot meals delivered to your hostel room">
     <title>Campus Bites - Food Delivery to Hostel Rooms</title>
-    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header with sticky navigation -->
     <header class="header">
         <nav class="nav-container">
             <div class="logo">
                 <img src="images/logo.png" alt="Campus Bites Logo" class="logo-img">
                 <h1>Campus Bites</h1>
             </div>
-            
             <ul class="nav-links">
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="menu.html">Menu</a></li>
@@ -24,8 +21,6 @@
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-
-            <!-- Cart icon with badge - Phase 2: Will be functional with JS -->
             <div class="cart-icon">
                 <img src="images/cart-icon.png" alt="Shopping Cart">
                 <span class="cart-badge">0</span>
@@ -34,19 +29,17 @@
     </header>
 
     <main>
-        <!-- Hero Section -->
         <section class="hero">
             <div class="hero-content">
                 <h1>Hot Meals to Your Hostel Room</h1>
                 <p>Order from campus-approved vendors and get fresh food delivered right to your door</p>
-                <div class="hero-buttons">
+                <div class="hero-buttons"></div>
                     <a href="menu.html" class="btn btn-primary">Browse Menu</a>
                     <a href="offers.html" class="btn btn-secondary">View Offers</a>
                 </div>
             </div>
         </section>
 
-        <!-- How It Works Section -->
         <section class="how-it-works">
             <h2>How It Works</h2>
             <div class="steps-grid">
@@ -79,11 +72,9 @@
             </div>
         </section>
 
-        <!-- Video Section -->
         <section class="video-section">
             <h2>See How We Deliver</h2>
             <div class="video-placeholder">
-                <!-- Phase 1: Video placeholder - Replace with actual video element -->
                 <video controls width="100%" poster="images/video-poster.jpg">
                     <source src="assets/delivery-video.mp4" type="video/mp4">
                     Your browser does not support the video tag.
@@ -93,14 +84,13 @@
         </section>
     </main>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-section">
                 <h3>Campus Bites</h3>
                 <p>Delicious meals delivered straight to your hostel room. Fast, fresh, and convenient.</p>
             </div>
-            
+
             <div class="footer-section">
                 <h4>Quick Links</h4>
                 <ul>
@@ -109,7 +99,7 @@
                     <li><a href="#">Refund Policy</a></li>
                 </ul>
             </div>
-            
+
             <div class="footer-section">
                 <h4>Contact</h4>
                 <p>📍 Campus Hostel Complex, Block A</p>
@@ -117,17 +107,15 @@
                 <p>✉️ support@campusbites.edu</p>
             </div>
         </div>
-        
+
         <div class="footer-bottom">
             <p>&copy; 2025 Campus Bites - College Capstone Project. All rights reserved.</p>
         </div>
     </footer>
 
-    <!-- Floating Track Order Button - Phase 2: Will open modal with JS -->
     <button class="floating-btn" id="trackOrderBtn">
         <img src="images/track-icon.png" alt="Track Order">
         Track Order
     </button>
-
 </body>
 </html>
