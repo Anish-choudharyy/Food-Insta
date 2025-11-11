@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Campus Bites - Hot meals delivered to your hostel room">
+    <title>Campus Bites - Food Delivery to Hostel Rooms</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header with sticky navigation -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Campus Bites Logo" class="logo-img">
+                <h1>Campus Bites</h1>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="delivery.html">Delivery</a></li>
+                <li><a href="offers.html">Offers</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <!-- Cart icon with badge - Phase 2: Will be functional with JS -->
+            <div class="cart-icon">
+                <img src="images/cart-icon.png" alt="Shopping Cart">
+                <span class="cart-badge">0</span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Hot Meals to Your Hostel Room</h1>
+                <p>Order from campus-approved vendors and get fresh food delivered right to your door</p>
+                <div class="hero-buttons">
+                    <a href="menu.html" class="btn btn-primary">Browse Menu</a>
+                    <a href="offers.html" class="btn btn-secondary">View Offers</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section class="how-it-works">
+            <h2>How It Works</h2>
+            <div class="steps-grid">
+                <article class="step-card">
+                    <div class="step-icon">
+                        <img src="images/menu-icon.png" alt="Choose Items">
+                    </div>
+                    <div class="step-number">Step 1</div>
+                    <h3>Choose Items</h3>
+                    <p>Browse our menu and select your favorite dishes</p>
+                </article>
+
+                <article class="step-card">
+                    <div class="step-icon">
+                        <img src="images/location-icon.png" alt="Enter Room Details">
+                    </div>
+                    <div class="step-number">Step 2</div>
+                    <h3>Enter Room Details</h3>
+                    <p>Provide your hostel block, floor, and room number</p>
+                </article>
+
+                <article class="step-card">
+                    <div class="step-icon">
+                        <img src="images/delivery-icon.png" alt="Track and Receive">
+                    </div>
+                    <div class="step-number">Step 3</div>
+                    <h3>Track & Receive</h3>
+                    <p>Track your order and enjoy hot food at your doorstep</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Video Section -->
+        <section class="video-section">
+            <h2>See How We Deliver</h2>
+            <div class="video-placeholder">
+                <!-- Phase 1: Video placeholder - Replace with actual video element -->
+                <video controls width="100%" poster="images/video-poster.jpg">
+                    <source src="assets/delivery-video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p class="video-note">📹 Video: "Campus Bites - Delivery Process"</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Campus Bites</h3>
+                <p>Delicious meals delivered straight to your hostel room. Fast, fresh, and convenient.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Refund Policy</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>📍 Campus Hostel Complex, Block A</p>
+                <p>📞 +91-1234-567890</p>
+                <p>✉️ support@campusbites.edu</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Campus Bites - College Capstone Project. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Floating Track Order Button - Phase 2: Will open modal with JS -->
+    <button class="floating-btn" id="trackOrderBtn">
+        <img src="images/track-icon.png" alt="Track Order">
+        Track Order
+    </button>
+
+</body>
+</html>
