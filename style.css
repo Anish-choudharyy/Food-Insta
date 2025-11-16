@@ -1,10 +1,3 @@
-/* =================================================================
-   CampusBites - Food Delivery Website Stylesheet
-   Phase 1 - HTML & CSS Only
-   Student Capstone Project
-   ================================================================= */
-
-/* === RESET & GLOBAL STYLES === */
 * {
     margin: 0;
     padding: 0;
@@ -18,7 +11,6 @@ body {
     background-color: #fff;
 }
 
-/* === TYPOGRAPHY === */
 h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
     line-height: 1.3;
@@ -30,14 +22,19 @@ a {
     transition: all 0.3s ease;
 }
 
-/* === CONTAINER === */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-/* === NAVIGATION BAR === */
+
 .navbar {
     background-color: #fff;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -75,7 +72,6 @@ a {
     font-size: 16px;
     padding: 8px 16px;
     border-radius: 8px;
-    transition: all 0.3s ease;
 }
 
 .nav-links a:hover,
@@ -84,7 +80,7 @@ a {
     background-color: #fff5f5;
 }
 
-/* === BUTTONS === */
+/* BUTTON */
 .btn-primary {
     background-color: #ff4d4f;
     color: #fff;
@@ -95,7 +91,6 @@ a {
     border: none;
     cursor: pointer;
     display: inline-block;
-    transition: all 0.3s ease;
     box-shadow: 0 4px 15px rgba(255, 77, 79, 0.3);
 }
 
@@ -114,7 +109,6 @@ a {
     font-size: 14px;
     font-weight: 600;
     display: inline-block;
-    transition: all 0.3s ease;
 }
 
 .btn-secondary:hover {
@@ -130,14 +124,13 @@ a {
     padding: 8px 16px;
     font-size: 13px;
     font-weight: 600;
-    transition: all 0.3s ease;
 }
 
 .btn-order:hover {
     background-color: #e63946;
 }
 
-/* === HERO SECTION === */
+
 .hero {
     background: linear-gradient(135deg, #ff4d4f 0%, #e63946 100%);
     min-height: 500px;
@@ -147,7 +140,6 @@ a {
     overflow: hidden;
 }
 
-/* Background Video Styling */
 .hero-video {
     position: absolute;
     top: 50%;
@@ -161,7 +153,6 @@ a {
     object-fit: cover;
 }
 
-/* Dark overlay for better text readability */
 .hero::before {
     content: '';
     position: absolute;
@@ -200,7 +191,7 @@ a {
     text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
 }
 
-/* === SECTIONS === */
+/* SECTIONS */
 .section-title {
     text-align: center;
     font-size: 36px;
@@ -215,7 +206,7 @@ a {
     margin-bottom: 48px;
 }
 
-/* === CATEGORIES SECTION === */
+/* CATEGORIES */
 .categories {
     padding: 80px 0;
     background-color: #f9f9f9;
@@ -256,41 +247,11 @@ a {
     height: 100%;
     object-fit: cover;
     object-position: center;
-    display: block;
     transition: transform 0.3s ease;
 }
 
 .category-card:hover .category-img {
     transform: scale(1.1);
-}
-
-.image-placeholder {
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    transition: transform 0.3s ease;
-}
-
-.category-card:hover .image-placeholder {
-    transform: scale(1.1);
-}
-
-/* Image placeholder backgrounds with gradients */
-.burger-bg {
-    background: linear-gradient(135deg, #ffd89b 0%, #ff6b6b 100%);
-}
-
-.pizza-bg {
-    background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
-}
-
-.snacks-bg {
-    background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
-}
-
-.drinks-bg {
-    background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
 }
 
 .category-info {
@@ -310,7 +271,7 @@ a {
     margin-bottom: 20px;
 }
 
-/* === FEATURES SECTION === */
+/* FEATURES */
 .features {
     padding: 80px 0;
     background-color: #fff;
@@ -353,7 +314,7 @@ a {
     color: #666;
 }
 
-/* === PAGE HEADER === */
+/* PAGE HEADER */
 .page-header {
     background: linear-gradient(135deg, #ff4d4f 0%, #e63946 100%);
     color: #fff;
@@ -366,7 +327,6 @@ a {
     align-items: center;
 }
 
-/* Page Header Background Video */
 .page-header-video {
     position: absolute;
     top: 50%;
@@ -380,7 +340,6 @@ a {
     object-fit: cover;
 }
 
-/* Dark overlay for text readability */
 .page-header::before {
     content: '';
     position: absolute;
@@ -410,7 +369,7 @@ a {
     text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
 }
 
-/* === MENU PAGE === */
+/* MENU */
 .menu-section {
     padding: 60px 0;
     background-color: #f9f9f9;
@@ -452,7 +411,6 @@ a {
     height: 180px;
     object-fit: cover;
     object-position: center;
-    display: block;
     transition: transform 0.3s ease;
 }
 
@@ -491,7 +449,7 @@ a {
     color: #ff4d4f;
 }
 
-/* === ABOUT PAGE === */
+/* ABOUT PAGE */
 .about-content {
     padding: 60px 0;
 }
@@ -547,20 +505,12 @@ a {
     font-size: 18px;
 }
 
-.about-image .image-placeholder {
-    height: 400px;
-    border-radius: 16px;
-    background-position: center;
-    background-size: cover;
-}
-
 .about-img {
     width: 100%;
     height: 400px;
     object-fit: cover;
     object-position: center;
     border-radius: 16px;
-    display: block;
     box-shadow: 0 6px 25px rgba(0, 0, 0, 0.12);
     transition: transform 0.3s ease;
 }
@@ -569,23 +519,11 @@ a {
     transform: scale(1.02);
 }
 
-.team-bg {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-}
-
-.mission-bg {
-    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-}
-
 .why-choose {
     padding: 60px 0;
     background-color: #f9f9f9;
     border-radius: 20px;
     margin: 60px 0;
-}
-
-.why-choose .section-title {
-    margin-bottom: 48px;
 }
 
 .feature-card {
@@ -619,7 +557,6 @@ a {
     line-height: 1.6;
 }
 
-/* Team Section */
 .team-section {
     padding: 60px 0;
 }
@@ -674,7 +611,6 @@ a {
     line-height: 1.6;
 }
 
-/* CTA Section */
 .cta-section {
     text-align: center;
     padding: 80px 40px;
@@ -704,7 +640,7 @@ a {
     background-color: #f0f0f0;
 }
 
-/* === CONTACT PAGE === */
+/* CONTACT PAGE */
 .contact-section {
     padding: 60px 0;
     background-color: #f9f9f9;
@@ -717,21 +653,23 @@ a {
     margin-bottom: 60px;
 }
 
-/* Contact Form */
-.contact-form-container {
+.contact-form-container,
+.contact-info-container {
     background-color: #fff;
     padding: 40px;
     border-radius: 16px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
 
-.contact-form-container h2 {
+.contact-form-container h2,
+.contact-info-container h2 {
     font-size: 28px;
     margin-bottom: 12px;
     color: #333;
 }
 
-.contact-form-container > p {
+.contact-form-container > p,
+.contact-info-container > p {
     font-size: 14px;
     color: #666;
     margin-bottom: 32px;
@@ -771,26 +709,6 @@ a {
     resize: vertical;
 }
 
-/* Contact Information */
-.contact-info-container {
-    background-color: #fff;
-    padding: 40px;
-    border-radius: 16px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-}
-
-.contact-info-container h2 {
-    font-size: 28px;
-    margin-bottom: 12px;
-    color: #333;
-}
-
-.contact-info-container > p {
-    font-size: 14px;
-    color: #666;
-    margin-bottom: 32px;
-}
-
 .info-block {
     display: flex;
     gap: 20px;
@@ -819,7 +737,6 @@ a {
     line-height: 1.8;
 }
 
-/* Map Placeholder */
 .map-placeholder {
     margin-top: 48px;
     padding-top: 32px;
@@ -833,7 +750,6 @@ a {
     object-position: center;
     border-radius: 12px;
     margin-bottom: 12px;
-    display: block;
     box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
 }
 
@@ -843,7 +759,7 @@ a {
     text-align: center;
 }
 
-/* FAQ Section */
+/* FAQ */
 .faq-section {
     background-color: #fff;
     padding: 60px 40px;
@@ -877,7 +793,7 @@ a {
     line-height: 1.7;
 }
 
-/* === FOOTER === */
+/* FOOTER */
 .footer {
     background-color: #1a1a1a;
     color: #fff;
@@ -926,7 +842,6 @@ a {
 .footer-links a {
     color: #aaa;
     font-size: 14px;
-    transition: color 0.3s ease;
 }
 
 .footer-links a:hover {
@@ -950,161 +865,7 @@ a {
     color: #888;
 }
 
-/* === RESPONSIVE DESIGN === */
-
-/* Tablets and below (768px) */
-@media (max-width: 768px) {
-    /* Navigation */
-    .nav-links {
-        gap: 16px;
-    }
-    
-    .nav-links a {
-        font-size: 14px;
-        padding: 6px 12px;
-    }
-    
-    /* Hero Section */
-    .hero-title {
-        font-size: 32px;
-    }
-    
-    .hero-subtitle {
-        font-size: 16px;
-    }
-    
-    /* Sections */
-    .section-title {
-        font-size: 28px;
-    }
-    
-    .categories,
-    .features,
-    .menu-section,
-    .about-content {
-        padding: 40px 0;
-    }
-    
-    /* Grids */
-    .category-grid,
-    .features-grid,
-    .menu-grid {
-        grid-template-columns: 1fr;
-        gap: 24px;
-    }
-    
-    /* About Page */
-    .about-block {
-        grid-template-columns: 1fr;
-        gap: 32px;
-    }
-    
-    .about-image .image-placeholder {
-        height: 300px;
-    }
-    
-    /* Contact Page */
-    .contact-wrapper {
-        grid-template-columns: 1fr;
-        gap: 32px;
-    }
-    
-    .faq-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    /* Footer */
-    .footer-content {
-        grid-template-columns: 1fr 1fr;
-        gap: 32px;
-    }
-}
-
-/* Mobile devices (480px) */
-@media (max-width: 480px) {
-    /* Navigation */
-    .logo h1 {
-        font-size: 22px;
-    }
-    
-    .nav-links {
-        gap: 8px;
-    }
-    
-    .nav-links a {
-        font-size: 12px;
-        padding: 6px 10px;
-    }
-    
-    /* Hero Section */
-    .hero-title {
-        font-size: 26px;
-    }
-    
-    .hero-subtitle {
-        font-size: 14px;
-    }
-    
-    .btn-primary {
-        padding: 12px 24px;
-        font-size: 14px;
-    }
-    
-    /* Sections */
-    .section-title {
-        font-size: 24px;
-    }
-    
-    .section-subtitle {
-        font-size: 14px;
-    }
-    
-    /* Page Header */
-    .page-header h1 {
-        font-size: 32px;
-    }
-    
-    .page-header p {
-        font-size: 16px;
-    }
-    
-    /* Category & Menu Headings */
-    .category-heading {
-        font-size: 26px;
-    }
-    
-    /* Forms */
-    .contact-form-container,
-    .contact-info-container {
-        padding: 24px;
-    }
-    
-    /* Footer */
-    .footer-content {
-        grid-template-columns: 1fr;
-    }
-    
-    .footer {
-        padding: 40px 0 20px;
-    }
-}
-
-/* === UTILITY CLASSES === */
-.text-center {
-    text-align: center;
-}
-
-.mt-1 { margin-top: 8px; }
-.mt-2 { margin-top: 16px; }
-.mt-3 { margin-top: 24px; }
-.mt-4 { margin-top: 32px; }
-
-.mb-1 { margin-bottom: 8px; }
-.mb-2 { margin-bottom: 16px; }
-.mb-3 { margin-bottom: 24px; }
-.mb-4 { margin-bottom: 32px; }
-
-/* === FLOATING TRACK ORDER BUTTON === */
+/* TRACK ORDER BUTTON */
 .track-order-btn {
     position: fixed;
     bottom: 30px;
@@ -1121,7 +882,6 @@ a {
     box-shadow: 0 6px 25px rgba(255, 77, 79, 0.4);
     z-index: 999;
     transition: all 0.3s ease;
-    text-decoration: none;
 }
 
 .track-order-btn:hover {
@@ -1140,18 +900,73 @@ a {
     letter-spacing: 0.5px;
 }
 
-/* Pulse animation for the icon */
 @keyframes pulse {
-    0%, 100% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.1);
-    }
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
 }
 
-/* Mobile responsive for track button */
+/* RESPONSIVE DESIGN */
+
+/* Tablets */
 @media (max-width: 768px) {
+    .nav-links {
+        gap: 16px;
+    }
+    
+    .nav-links a {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+    
+    .hero-title {
+        font-size: 32px;
+    }
+    
+    .hero-subtitle {
+        font-size: 16px;
+    }
+    
+    .section-title {
+        font-size: 28px;
+    }
+    
+    .categories,
+    .features,
+    .menu-section,
+    .about-content {
+        padding: 40px 0;
+    }
+    
+    .category-grid,
+    .features-grid,
+    .menu-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+    
+    .about-block {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+    
+    .about-img {
+        height: 300px;
+    }
+    
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+    
+    .faq-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+        gap: 32px;
+    }
+    
     .track-order-btn {
         bottom: 20px;
         right: 20px;
@@ -1168,7 +983,67 @@ a {
     }
 }
 
+/* Mobile */
 @media (max-width: 480px) {
+    .logo h1 {
+        font-size: 22px;
+    }
+    
+    .nav-links {
+        gap: 8px;
+    }
+    
+    .nav-links a {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+    
+    .hero-title {
+        font-size: 26px;
+    }
+    
+    .hero-subtitle {
+        font-size: 14px;
+    }
+    
+    .btn-primary {
+        padding: 12px 24px;
+        font-size: 14px;
+    }
+    
+    .section-title {
+        font-size: 24px;
+    }
+    
+    .section-subtitle {
+        font-size: 14px;
+    }
+    
+    .page-header h1 {
+        font-size: 32px;
+    }
+    
+    .page-header p {
+        font-size: 16px;
+    }
+    
+    .category-heading {
+        font-size: 26px;
+    }
+    
+    .contact-form-container,
+    .contact-info-container {
+        padding: 24px;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer {
+        padding: 40px 0 20px;
+    }
+    
     .track-order-btn {
         bottom: 15px;
         right: 15px;
