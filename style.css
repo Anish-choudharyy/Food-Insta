@@ -816,3 +816,34 @@ img {
 .track-text {
     font-size: 15px;
 }
+
+@media (max-width: 768px) {
+    .nav-links {gap: 16px;}
+    .nav-links a {font-size: 14px; padding: 6px 12px;}
+    .hero-title {font-size: 32px;}
+    .hero-subtitle {font-size: 16px;}
+    .section-title {font-size: 28px;}
+    .categories, .features, .menu-section, .about-content {padding: 40px 0;}
+    .category-grid, .features-grid, .menu-grid {grid-template-columns: 1fr;}
+    .about-block {grid-template-columns: 1fr; gap: 32px;}
+    .about-img {height: 300px;}
+    .contact-wrapper {grid-template-columns: 1fr; gap: 32px;}
+    .footer-content {grid-template-columns: 1fr 1fr;}
+    .track-order-btn {bottom: 20px; right: 20px; padding: 14px 20px;}
+}
+
+@media (max-width: 480px) {
+    .logo h1 {font-size: 22px;}
+    .nav-links {gap: 8px;}
+    .nav-links a {font-size: 12px; padding: 6px 10px;}
+    .hero-title {font-size: 26px;}
+    .hero-subtitle {font-size: 14px;}
+    .btn-primary {padding: 12px 24px; font-size: 14px;}
+    .section-title {font-size: 24px;}
+    .page-header h1 {font-size: 32px;}
+    .category-heading {font-size: 26px;}
+    .contact-form-container, .contact-info-container {padding: 24px;}
+    .footer-content {grid-template-columns: 1fr;}
+    .footer {padding: 40px 0 20px;}
+    .track-order-btn {bottom: 15px; right: 15px; padding: 12px 18px;}
+}
