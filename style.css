@@ -25,7 +25,6 @@ img {
     padding: 0 20px;
 }
 
-/* Navigation */
 .navbar {
     background: #fff;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
@@ -66,7 +65,6 @@ img {
     background: #fff5f5;
 }
 
-/* Buttons */
 .btn-primary {
     background: #ff4d4f;
     color: #fff;
@@ -103,7 +101,6 @@ img {
     font-weight: 600;
 }
 
-/* Hero */
 .hero {
     background: linear-gradient(135deg, #ff4d4f, #e63946);
     min-height: 500px;
@@ -156,7 +153,6 @@ img {
     margin-bottom: 32px;
 }
 
-/* Sections */
 .section-title {
     text-align: center;
     font-size: 36px;
@@ -169,7 +165,6 @@ img {
     margin-bottom: 48px;
 }
 
-/* Categories */
 .categories {
     padding: 80px 0;
     background: #f9f9f9;
@@ -225,7 +220,6 @@ img {
     margin-bottom: 20px;
 }
 
-/* Features */
 .features {
     padding: 80px 0;
 }
@@ -276,7 +270,6 @@ img {
     color: #666;
 }
 
-/* Page Header */
 .page-header {
     background: linear-gradient(135deg, #ff4d4f, #e63946);
     color: #fff;
@@ -321,7 +314,6 @@ img {
     margin-bottom: 12px;
 }
 
-/* Menu */
 .menu-section {
     padding: 60px 0;
     background: #f9f9f9;
@@ -395,7 +387,6 @@ img {
     color: #ff4d4f;
 }
 
-/* About */
 .about-content {
     padding: 60px 0;
 }
@@ -497,7 +488,6 @@ img {
     color: #666;
 }
 
-/* Team */
 .team-section {
     padding: 60px 0;
 }
@@ -542,7 +532,6 @@ img {
     color: #666;
 }
 
-/* CTA */
 .cta-section {
     text-align: center;
     padding: 80px 40px;
@@ -567,7 +556,6 @@ img {
     color: #ff4d4f;
 }
 
-/* Contact */
 .contact-section {
     padding: 60px 0;
     background: #f9f9f9;
@@ -684,7 +672,6 @@ img {
     text-align: center;
 }
 
-/* FAQ */
 .faq-section {
     background: #fff;
     padding: 60px 40px;
@@ -716,7 +703,6 @@ img {
     color: #666;
 }
 
-/* Footer */
 .footer {
     background: #1a1a1a;
     color: #fff;
@@ -784,7 +770,6 @@ img {
     color: #888;
 }
 
-/* Track Order */
 .track-order-btn {
     position: fixed;
     bottom: 30px;
@@ -846,4 +831,165 @@ img {
     .footer-content {grid-template-columns: 1fr;}
     .footer {padding: 40px 0 20px;}
     .track-order-btn {bottom: 15px; right: 15px; padding: 12px 18px;}
+}
+
+.theme-toggle {
+    background: #f0f0f0;
+    border: none;
+    border-radius: 30px;
+    width: 60px;
+    height: 30px;
+    cursor: pointer;
+    position: relative;
+    transition: 0.3s;
+    margin-left: 20px;
+}
+
+.theme-toggle:hover {
+    background: #e0e0e0;
+}
+
+.sun-icon,
+.moon-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.sun-icon {
+    left: 8px;
+}
+
+.moon-icon {
+    right: 8px;
+    opacity: 0;
+}
+
+.dark-mode {
+    background: #1a1a1a;
+    color: #e0e0e0;
+}
+
+.dark-mode .navbar {
+    background: #2d2d2d;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode .logo h1 {
+    color: #e0e0e0;
+}
+
+.dark-mode .nav-links a {
+    color: #b0b0b0;
+}
+
+.dark-mode .nav-links a:hover,
+.dark-mode .nav-links a.active {
+    color: #ff4d4f;
+    background: rgba(255, 77, 79, 0.1);
+}
+
+.dark-mode .theme-toggle {
+    background: #3d3d3d;
+}
+
+.dark-mode .theme-toggle:hover {
+    background: #4d4d4d;
+}
+
+.dark-mode .sun-icon {
+    opacity: 0;
+}
+
+.dark-mode .moon-icon {
+    opacity: 1;
+}
+
+.dark-mode .categories,
+.dark-mode .menu-section,
+.dark-mode .contact-section {
+    background: #1a1a1a;
+}
+
+.dark-mode .category-card,
+.dark-mode .feature-box,
+.dark-mode .menu-card,
+.dark-mode .contact-form-container,
+.dark-mode .contact-info-container,
+.dark-mode .feature-card,
+.dark-mode .team-member,
+.dark-mode .faq-section {
+    background: #2d2d2d;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode .category-info h3,
+.dark-mode .feature-box h3,
+.dark-mode .menu-details h3,
+.dark-mode .section-title,
+.dark-mode .category-heading,
+.dark-mode .about-text h2,
+.dark-mode .feature-card h3,
+.dark-mode .team-member h3,
+.dark-mode .contact-form-container h2,
+.dark-mode .contact-info-container h2,
+.dark-mode .info-text h3,
+.dark-mode .faq-item h3 {
+    color: #e0e0e0;
+}
+
+.dark-mode .category-info p,
+.dark-mode .feature-box p,
+.dark-mode .menu-details p,
+.dark-mode .section-subtitle,
+.dark-mode .about-text p,
+.dark-mode .feature-card p,
+.dark-mode .team-desc,
+.dark-mode .contact-form-container > p,
+.dark-mode .contact-info-container > p,
+.dark-mode .info-text p,
+.dark-mode .faq-item p {
+    color: #b0b0b0;
+}
+
+.dark-mode .menu-footer,
+.dark-mode .info-block:not(:last-of-type) {
+    border-color: #404040;
+}
+
+.dark-mode .form-group input,
+.dark-mode .form-group textarea {
+    background: #3d3d3d;
+    border-color: #505050;
+    color: #e0e0e0;
+}
+
+.dark-mode .form-group input::placeholder,
+.dark-mode .form-group textarea::placeholder {
+    color: #808080;
+}
+
+.dark-mode .form-group input:focus,
+.dark-mode .form-group textarea:focus {
+    border-color: #ff4d4f;
+}
+
+.dark-mode .faq-item {
+    background: #2d2d2d;
+    border-left-color: #ff4d4f;
+}
+
+.dark-mode .why-choose {
+    background: #2d2d2d;
+}
+
+@media (max-width: 768px) {
+    .theme-toggle {
+        position: absolute;
+        top: 20px;
+        right: 60px;
+        margin-left: 0;
+    }
 }
