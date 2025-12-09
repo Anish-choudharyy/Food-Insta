@@ -13,25 +13,25 @@
 
 
     <header class="navbar">
-        <div class="container">
-            <nav class="nav-content">
-                <div class="logo">
-                    <h1>Campus<span>Bites</span></h1>
-                </div>
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="menu.html" class="active">Menu</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
+    <div class="container">
+        <nav class="nav-content">
+            <div class="logo">
+                <h1>Campus<span>Bites</span></h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                <span class="sun-icon">☀️</span>
+                <span class="moon-icon">🌙</span>
+            </button>
+        </nav>
+    </div>
+</header>
     <section class="page-header">
-    
-    
-        <!-- Background Video -->
     <video autoplay muted loop class="page-header-video">
         <source src="menu-video.mov" type="video/mp4">
         <source src="menu-video.webm" type="video/webm">
@@ -48,7 +48,6 @@
 
     <section class="menu-section">
         <div class="container">
-            <!-- Burgers -->
             <div class="menu-category">
                 <h2 class="category-heading">🍔 Burgers</h2>
                 <div class="menu-grid">
@@ -126,7 +125,6 @@
                 </div>
             </div>
 
-            <!-- Pizza -->
             <div class="menu-category">
                 <h2 class="category-heading">🍕 Pizza</h2>
                 <div class="menu-grid">
@@ -204,7 +202,6 @@
                 </div>
             </div>
 
-            <!-- Snacks -->
             <div class="menu-category">
                 <h2 class="category-heading">🍟 Snacks</h2>
                 <div class="menu-grid">
@@ -282,7 +279,6 @@
                 </div>
             </div>
 
-            <!-- Drinks -->
             <div class="menu-category">
                 <h2 class="category-heading">🥤 Drinks</h2>
                 <div class="menu-grid">
@@ -405,9 +401,9 @@
         </div>
     </footer>
 
-    <!-- Order Button -->
     <a href="#" class="track-order-btn" title="Track Your Order">
         <span class="track-text">Track Order</span>
     </a>
+    <script src="script.js"></script>
 </body>
 </html>
