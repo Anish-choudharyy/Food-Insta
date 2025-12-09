@@ -9,26 +9,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation Bar -->
     <header class="navbar">
-        <div class="container">
-            <nav class="nav-content">
-                <div class="logo">
-                    <h1>Campus<span>Bites</span></h1>
-                </div>
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="menu.html">Menu</a></li>
-                    <li><a href="about.html" class="active">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <div class="container">
+        <nav class="nav-content">
+            <div class="logo">
+                <h1>Campus<span>Bites</span></h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                <span class="sun-icon">☀️</span>
+                <span class="moon-icon">🌙</span>
+            </button>
+        </nav>
+    </div>
+</header>
 
-    <!-- Page Header -->
     <section class="page-header">
-        <!-- Background Video -->
         <video autoplay muted loop class="page-header-video">
             <source src="about-video.mp4" type="video/mp4">
             <source src="about-video.webm" type="video/webm">
@@ -43,10 +44,8 @@
         </div>
     </section>
 
-    <!-- About Content Section -->
     <section class="about-content">
         <div class="container">
-            <!-- Our Story -->
             <article class="about-block">
                 <div class="about-text">
                     <h2>Our Story</h2>
@@ -59,7 +58,6 @@
                 </div>
             </article>
 
-            <!-- Our Mission -->
             <article class="about-block reverse">
                 <div class="about-image">
                     <img src="mission.jpg" alt="Our Mission - Serving Students" class="about-img">
@@ -79,7 +77,6 @@
             </article>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
@@ -122,9 +119,9 @@
         </div>
     </footer>
 
-    <!-- Track Order -->
     <a href="#" class="track-order-btn" title="Track Your Order">
         <span class="track-text">Track Order</span>
     </a>
+    <script src="script.js"></script>
 </body>
 </html>
