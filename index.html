@@ -11,24 +11,27 @@
 <body>
 
     <header class="navbar">
-        <div class="container">
-            <nav class="nav-content">
-                <div class="logo">
-                    <h1>Campus<span>Bites</span></h1>
-                </div>
-                <ul class="nav-links">
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="menu.html">Menu</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <div class="container">
+        <nav class="nav-content">
+            <div class="logo">
+                <h1>Campus<span>Bites</span></h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                <span class="sun-icon">☀️</span>
+                <span class="moon-icon">🌙</span>
+            </button>
+        </nav>
+    </div>
+</header>
 
 
     <section class="hero">
-        <!-- Background Video -->
         <video autoplay muted loop class="hero-video">
             <source src="hero-video.mp4" type="video/mp4">
             <source src="hero-video.webm" type="video/webm">
@@ -53,7 +56,6 @@
             <p class="section-subtitle">What are you craving today?</p>
             
             <div class="category-grid">
-                <!-- Card 1 -->
                 <article class="category-card">
                     <div class="category-image">
                         <img src="burger.jpg" alt="Burgers Category" class="category-img">
@@ -64,8 +66,6 @@
                         <a href="menu.html" class="btn-secondary">View Menu</a>
                     </div>
                 </article>
-
-                <!-- Card 2 -->
                 <article class="category-card">
                     <div class="category-image">
                         <img src="pizza.jpg" alt="Pizza Category" class="category-img">
@@ -76,8 +76,6 @@
                         <a href="menu.html" class="btn-secondary">View Menu</a>
                     </div>
                 </article>
-
-                <!-- Card 3 -->
                 <article class="category-card">
                     <div class="category-image">
                         <img src="snacks.jpg" alt="Snacks Category" class="category-img">
@@ -88,8 +86,6 @@
                         <a href="menu.html" class="btn-secondary">View Menu</a>
                     </div>
                 </article>
-
-                <!-- Card 4 -->
                 <article class="category-card">
                     <div class="category-image">
                         <img src="drinks.jpg" alt="Drinks Category" class="category-img">
@@ -104,7 +100,6 @@
         </div>
     </section>
 
-<!-- footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
@@ -150,9 +145,9 @@
         </div>
     </footer>
 
-    <!-- Order Button -->
     <a href="#" class="track-order-btn" title="Track Your Order">
         <span class="track-text">Track Order</span>
     </a>
+    <script src="script.js"></script>
 </body>
 </html>
